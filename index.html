@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>银河护卫队 Guardians of the Galaxy</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+        .display-none-class {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <p class="chinese-version">请选择语言：</p>
+        <p lang="en" class="english-version display-none-class">Please select your language:</p>
+        <input type="radio" name="language-selector" value="1" checked onclick="changeLanguage()">中文</input>
+        <input lang="en" type="radio" name="language-selector" value="2" onclick="changeLanguage()">English</input>
+        <script>
+            function changeLanguage() {
+                const val = document.querySelector('input[name="language-selector"]:checked').value;
+                const chineseClass = document.querySelectorAll('.chinese-version');
+                const englishClass = document.querySelectorAll('.english-version');
+                if (val === "1") {
+                    chineseClass.forEach(function(cClass) {
+                        cClass.classList.remove("display-none-class");
+                    });
+
+                    englishClass.forEach(function(eClass) {
+                        eClass.classList.add("display-none-class");
+                    });
+                } else {
+                    englishClass.forEach(function(cClass) {
+                        cClass.classList.remove("display-none-class");
+                    });
+
+                    chineseClass.forEach(function(eClass) {
+                        eClass.classList.add("display-none-class");
+                    });
+                }
+            }
+        </script>
+    </header>
+    <div class="chinese-version">
+        <nav>
+            <ol>
+                <li><a href="#简介">简介</a></li>
+                <li><a href="#剧情">剧情</a></li>
+                <li><a href="#主演">主演</a></li>
+                <li><a href="#制作">制作</a></li>
+                <li><a href="#剧照">剧照</a></li>
+                <li><a href="#外部链接">外部链接</a></li>
+            </ol>
+        </nav>
+        <h1>银河护卫队（电影）</h1>
+
+        <section id="简介">
+            <h2>简介</h2>
+            <p>
+                《银河护卫队》是一部于2014年上映的美国超级英雄电影，改编自漫威漫画的同名作品。本片为漫威电影宇宙系列的第十部作品。由漫威影业制作，华特迪士尼影业负责发行。
+            </p>
+        </section>
+
+        <section id="剧情">
+            <h2>剧情</h2>
+            <p>
+                1988年，少年彼得·奎尔目睹母亲梅尔迪丝·奎尔因脑癌去世后，被星际盗贼军团“掠夺者”掳走至宇宙，而掠夺者领袖勇度将他养育长大、将他训练成为一位自称“星爵”的星际大盗。
+            </p>
+            <p> 
+                成年后，奎尔一人来到废弃星球莫拉格，听着母亲生前留给他的《劲爆歌曲大帝国第一辑》盗取到宇宙灵球，但一个为克里狂暴份子罗南卖命的机器人克劳斯突然走进来打算抓捕他并抢走灵球，奎尔虽然最后逃出星球，但行踪不小心被勇度发现，还被勇度放出悬赏。
+            </p>
+            <a href="//zh.wikipedia.org/zh-cn/%E9%93%B6%E6%B2%B3%E6%8A%A4%E5%8D%AB%E9%98%9F_(%E7%94%B5%E5%BD%B1)#%E5%8A%87%E6%83%85" target="_blank">阅读更多</a>
+        </section>
+
+        <section id="主演">
+            <h2>主演</h2>
+            <table>
+                <thead><tr><th>角色</th><th>演员</th><th>简介</th></tr></thead>
+                <tbody>
+                    <tr><td>彼得·奎尔</td><td>克里斯·帕拉特</td><td>银河护卫队的队长，80年代出生的地球人，拥有人类与某种古老外星种族的混血基因。</td></tr>
+                    <tr><td>卡魔拉</td><td>佐伊·索尔达娜</td><td>银河护卫队的一员，属于泽侯贝里族，灭霸的养女，受令在罗南身边服侍。</td></tr>
+                    <tr><td>德拉克斯</td><td>戴夫·巴帝斯塔</td><td>银河护卫队的一员，种族不明。因为过去被罗南杀死的家人，踏上向罗南复仇道路的通缉犯。</td></tr>
+                    <tr><td>火箭浣熊</td><td>布莱德利·古柏</td><td>银河护卫队的一员。代号89P13的某行星实验体，和格鲁特合伙的宇宙强盗。</td></tr>
+                    <tr><td>格鲁特</td><td>范·迪塞尔</td><td>银河护卫队的一员，具有人类智能的树形生物，能透过种植碎屑来繁衍。</td></tr>
+                    <tr><td>指控者罗南</td><td>李·培斯<td>克里人的最高军事长官，奉行着克里古老律法的传统派军阀。</td></tr>
+                    <tr><td>星云</td><td>凯伦·吉兰</td><td>露芬莫德人，灭霸的养女，从小跟卡魔拉一起长大，跟罗南结伴出击的女刺客。</td></tr>
+                    <tr><td>勇度</td><td>迈克尔·鲁克</td><td>“掠夺者”的领袖，蓝色皮肤的盗猎者，吹口哨时可控制身上的飞箭，对星爵来说像是父亲一样的人物。</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="制作">
+           <h2>制作</h2>
+           <ul>
+               <li>拍摄：拍摄工作由2013年7月6日开始至10月12日完结。克里斯·帕拉特从此片开始就已和漫威签署多部片约。佐伊·索尔达娜表示，她饰演卡魔拉这个角色时是透过化妆的方式，而非CGI效果。而巴帝斯塔所化的妆需要大约花了4个小时，但能够在90分钟内被卸下。</li>
+               <li>营销：电影的首个预告片在2014年2月18日在《吉米·坎摩尔直播秀》内播出。之后亦在吉米·坎摩尔直播秀的youtube频道上推出。</li>
+               <li>作品派生：此外《银河护卫队》也将推出电视动画系列，于2015年于迪士尼XD上发布，该系列和电影的故事线无关，并设有灭霸作为一个突出的特点。</li>
+           </ul>
+        </section>
+
+        <section id="剧照">
+            <h2>剧照</h2>
+            <div>
+                <a href="images/img1.jpg" target="_blank">
+                    <img width="400" src="images/img1.jpg" alt="银河护卫队剧照1">
+                </a>
+            </div>
+            <div>
+                <a href="images/img2.jpg" target="_blank">
+                    <img width="400" src="images/img2.jpg" alt="银河护卫队剧照2">
+                </a>
+            </div>
+            <div>
+                <a href="images/img3.jpg" target="_blank">
+                    <img width="400" src="images/img3.jpg" alt="银河护卫队剧照3">
+                </a>
+            </div>
+        </section>
+
+        <section id="外部链接">
+            <h2>外部链接</h2>
+            <ol>
+                <li><a href="//marvel.com/guardians" target="_blank">官方网站</a></li>
+                <li><a href="//www.imdb.com/title/tt02015381/" target="_blank">互联网电影数据库《银河护卫队》</a></li>
+                <li><a href="//www.rottentomatoes.com/m/guardians_of_the_galaxy" target="_blank">烂番茄《银河护卫队》</a></li>
+            </ol>
+        </section>
+
+        <hr>
+        <footer>
+            仅作个人练习使用。内容来自<a href="//zh.wikipedia.org/zh-cn/%E9%93%B6%E6%B2%B3%E6%8A%A4%E5%8D%AB%E9%98%9F_(%E7%94%B5%E5%BD%B1)" target="_blank">维基百科</a>。
+        </footer>
+    </div>
+    <div lang="en" class="english-version display-none-class">
+        <nav>
+            <ol>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#plot">Plot</a></li>
+                <li><a href="#cast">Cast</a></li>
+                <li><a href="#production">Production</a></li>
+                <li><a href="#shoots">Shoots</a></li>
+                <li><a href="#links">External Links</a></li>
+            </ol>
+        </nav>
+        <h1>Guardians of the Galaxy (film)</h1>
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>
+                Guardians of the Galaxy (retroactively referred to as Guardians of the Galaxy Vol. 1) is a 2014 American superhero film based on the Marvel Comics superhero team of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 10th film in the Marvel Cinematic Universe (MCU). 
+            </p>
+        </section>
+
+        <section id="plot">
+            <h2>Plot</h2>
+            <p>
+                In 1988, following his mother's death, a young Peter Quill is abducted from Earth by a group of alien thieves and smugglers called the Ravagers led by Yondu Udonta.
+            </p>
+            <p>
+                Twenty-six years later on the abandoned planet Morag, Quill steals a mysterious orb, but is attacked by forces of the fanatical Kree renegade, Ronan the Accuser. Although Quill escapes with the orb, Yondu discovers his theft and issues a bounty for his capture, while Ronan sends the assassin Gamora after the orb.
+            </p>
+            <a href="//en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(film)#Plot" target="_self">READ MORE</a>
+        </section>
+
+        <section id="cast">
+            <h2>Cast</h2>
+            <table>
+                <thead><tr><th>Role</th><th>Actor/Actress</th><th>Introduction</th></tr></thead>
+                <tbody>
+                    <tr><td>Peter Quill</td><td>Chris Pratt</td><td>The half-human, half-alien leader of the Guardians who was abducted from Missouri as a child in 1988 and raised by a group of alien thieves and smugglers called the Ravagers.</td></tr>
+                    <tr><td>Gamora</td><td>Zoe Saldana</td><td>An orphan from an alien world who seeks redemption for her past crimes. She was trained by Thanos to be his personal assassin.</td></tr>
+                    <tr><td>Drax the Destroyer</td><td>Dave Bautista</td><td>A warrior who seeks to avenge his family's death at the hands of Ronan.</td></tr>
+                    <tr><td>Rocket</td><td>Bradley Cooper</td><td>A genetically-engineered raccoon-based bounty hunter, mercenary, and master of weapons and battle tactics.</td></tr>
+                    <tr><td>Groot</td><td>Vin Diesel</td><td>A tree-like humanoid, he is the accomplice of Rocket.</td></tr>
+                    <tr><td>Ronan the Accuser</td><td>Lee Pace<td>A Kree zealot and war criminal who agrees to retrieve an artifact for Thanos in exchange for the annihilation of his mortal enemies, the Xandarians. </td></tr>
+                    <tr><td>Nebula</td><td>Karen Gillan</td><td>An adopted daughter of Thanos who was raised with Gamora as siblings and is a loyal lieutenant in the employ of Ronan and Thanos.</td></tr>
+                    <tr><td>Yondu Udonta</td><td>Michael Rooker</td><td>A blue-skinned bandit who is the leader of the Ravagers and a paternal figure to Quill.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="production">
+            <h2>Production</h2>
+            <ul>
+                <li>Filming: Principal photography began around July 6, 2013 in London, United Kingdom, under the working title of Full Tilt. Filming took place at Shepperton Studios and Longcross Studios. Later in July, Gunn and the film's cast flew from London to attend San Diego Comic-Con International, where it was revealed that Pace would play Ronan the Accuser, Gillan would be Nebula, del Toro as The Collector, and that Djimon Hounsou had been cast as Korath.</li>
+                <li>Marketing: At Disney's D23 Expo in August 2013, Feige presented footage first revealed at the San Diego Comic-Con in July 2013. The first trailer for the film debuted on Jimmy Kimmel Live! on February 18, 2014, with a special introduction by Chris Pratt.</li>
+                <li>Merchandise: In June 2012, Marvel filed eleven trademark applications for Guardians of the Galaxy, covering a variety of consumer products, from video games to cosmetics.</li>
+            </ul>
+        </section>
+
+        <section id="shoots">
+            <h2>Shoots</h2>
+            <div>
+                <a href="images/img1.jpg" target="_blank">
+                    <img width="400" src="images/img1.jpg" alt="Guardians of the Galaxy shoot 1">
+                </a>
+            </div>
+            <div>
+                <a href="images/img2.jpg" target="_blank">
+                    <img width="400" src="images/img2.jpg" alt="Guardians of the Galaxy shoot 2">
+                </a>
+            </div>
+            <div>
+                <a href="images/img3.jpg" target="_blank">
+                    <img width="400" src="images/img3.jpg" alt="Guardians of the Galaxy shoot 3">
+                </a>
+            </div>
+        </section>
+
+        <section id="links">
+            <h2>External Links</h2>
+            <ol>
+                <li><a href="//marvel.com/movies/movie/179/guardians_of_the_galaxy">Official website</a></li>
+                <li><a href="//www.imdb.com/title/tt2015381/">Guardians of the Galaxy on IMDb</a></li>
+                <li><a href="//www.rottentomatoes.com/m/guardians_of_the_galaxy">Guardians of the Galaxy on Rotten Tomatoes</a></li>
+            </ol>
+        </section>
+
+        <hr>
+        <footer>
+            For personal practice only. The content originated from <a href="//en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(film)" target="_self">Wikipedia</a>.
+        </footer>
+    </div>    
+</body>
+</html>
